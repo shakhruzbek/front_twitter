@@ -8,7 +8,7 @@ function loginUser() {
   const username = document.getElementById("username");
   const password = document.getElementById("password");
   axios
-    .post(`http://localhost:4005/user/login`, {
+    .post(`http://localhost:4001/user/login`, {
       username: username.value,
       password: password.value,
     })
@@ -22,7 +22,6 @@ function loginUser() {
       window.location.href = `./html/main.html`;
     })
     .catch((err) => {
-      document.querySelector(".err").style.display = "block";
       console.log(err);
     });
 }

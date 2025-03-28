@@ -4,7 +4,7 @@ function signUp() {
     const password = document.getElementById("password");
   
     axios
-      .post("http://localhost:4005/user/signUp", {
+      .post("http://localhost:4001/user/signUp", {
 
         firstname: firstname.value,
         username: username.value,
