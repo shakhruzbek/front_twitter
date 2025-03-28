@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Container */
+.main-container {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: auto;
+}
+
+.title {
+    font-weight: bold;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Segoe UI', 'Helvetica', 'Roboto';
+}
+
+.jointo {
+    font-size: 20px;
+    color: #fff;
+}
+
+.box {
+    margin-top: 90px;
+}
+
+
+.login-box input {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 13px;
+    outline: none;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+
+.login-box input:focus {
+    border-color: #1DA1F2;
+    box-shadow: 0 0 5px rgba(29, 161, 242, 0.5);
+}
+
+
+/* Link */
+p {
+    font-size: 14px;
+    color: #fff;
+}
+
+p a {
+    color: #1DA1F2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+button{
+    margin: 20px;
+    width: 25%;
+    padding: 10px;
+    border-radius: 35px;
+    background-color: #1DA1F2;
+}
+.sign-box input{
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 13px;
+    outline: none;
+    transition: 0.3s;
+    margin: 10px;
+}
