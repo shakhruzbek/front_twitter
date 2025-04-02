@@ -1,17 +1,12 @@
-const user = JSON.parse(localStorage.getItem("user"));
 
-if (user) {
-  // window.location.href = "../index.html"; 
-}
-
-
+ 
 function loginUser() {
   const username = document.getElementById("username")?.value;
   const password = document.getElementById("password")?.value;
 
   if (!username || !password) {
     alert("Iltimos, username va parolni kiriting!");
-    return;
+    // return;
   }
 
   axios
@@ -22,6 +17,8 @@ function loginUser() {
     .then((res) => {
       console.log(res.data);
       const { user, token } = res.data; 
+      console.log(user);
+      
 
       localStorage.setItem("user", JSON.stringify(user));
       localStorage.setItem("token", token);

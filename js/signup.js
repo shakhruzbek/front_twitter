@@ -1,3 +1,4 @@
+const userStore = JSON.parse(localStorage.getItem("user"));
 function signUp() {
     const firstname = document.getElementById("firstname");
     const username = document.getElementById("username");
